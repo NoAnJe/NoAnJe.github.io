@@ -1,15 +1,21 @@
 .darkbody {
     background-color: black;
+    color: white;
+}
+
+h1 {
+    color: grey;
 }
 
 .darkbutton {
     background-color: black;
+    color: white;
 }
 
-.darkbutton {
-    background-color: black;
+.darkbutton:hover {
+    background-color: darkslategray;
 }
 
 .lightbutton {
-    background-color: white;
+    background-color: darkslategray;
 }

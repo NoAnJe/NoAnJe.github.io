@@ -1,0 +1,9 @@
+
+.darkbutton {
+    background-color: black;
+    color: white;
+}
+
+.darkbutton:hover {
+    background-color: darkslategray;
+}

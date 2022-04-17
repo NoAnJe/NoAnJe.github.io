@@ -16,6 +16,19 @@ h1 span {
     border-radius: 0.2em;
 }
 
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 24px
+}
+
+h3 span {
+    background-color:aqua;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.2em;
+}
+
 img {
     vertical-align: -0.2em;
     height: 0.9em;
