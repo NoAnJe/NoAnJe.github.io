@@ -1,3 +1,4 @@
+var allText = '';
 
 function readTextFile(file)
 {
@@ -9,8 +10,8 @@ function readTextFile(file)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                var allText = rawFile.responseText;
-                alert(allText);
+                allText = rawFile.responseText;
+                // alert(allText);
             }
         }
     }
@@ -41,8 +42,8 @@ function addElement(value, index, array) {
     console.log("Item" + saleItem.Item)
 }
 
-const text = readTextFile("mineardsItems.json")
-const shopData = JSON.parse(text)
+const res = readTextFile("mineardsItems.json")
+var shopData = JSON.parse(allText)
 shopData.array.forEach(addElement);
 // const reader = new FileReader();
 
