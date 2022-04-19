@@ -1,0 +1,77 @@
+[
+  {
+    "Item": "Oak Logs",
+    "Quantity": 64,
+    "Price (Iron)": 2
+  },
+  {
+    "Item": "Acacia Logs",
+    "Quantity": 64,
+    "Price (Iron)": 2
+  },
+  {
+    "Item": "Spruce Logs",
+    "Quantity": 64,
+    "Price (Iron)": 1
+  },
+  {
+    "Item": "Jungle Logs",
+    "Quantity": 64,
+    "Price (Iron)": 2
+  },
+  {
+    "Item": "Dark Oak Logs",
+    "Quantity": 64,
+    "Price (Iron)": 2
+  },
+  {
+    "Item": "Birch Logs",
+    "Quantity": 64,
+    "Price (Iron)": 2
+  },
+  {
+    "Item": "Warped Logs",
+    "Quantity": 64,
+    "Price (Iron)": 4
+  },
+  {
+    "Item": "Crimson Logs",
+    "Quantity": 64,
+    "Price (Iron)": 4
+  },
+  {
+    "Item": "Torches",
+    "Quantity": 256,
+    "Price (Iron)": 1
+  },
+  {
+    "Item": "Sea Lanterns",
+    "Quantity": 8,
+    "Price (Iron)": 8
+  },
+  {
+    "Item": "Lanterns",
+    "Quantity": 32,
+    "Price (Iron)": 16
+  },
+  {
+    "Item": "Soul Lanterns",
+    "Quantity": 32,
+    "Price (Iron)": 32
+  },
+  {
+    "Item": "Glowstone",
+    "Quantity": 16,
+    "Price (Iron)": 4
+  },
+  {
+    "Item": "Redstone Lamp",
+    "Quantity": 16,
+    "Price (Iron)": 4
+  },
+  {
+    "Item": "Soul Torches",
+    "Quantity": 64,
+    "Price (Iron)": 4
+  }
+]

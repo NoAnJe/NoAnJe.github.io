@@ -36,7 +36,7 @@ function csvToArray(str, delimiter = ",") {
     return arr;
 }
 
-var text = readTextFile("mineardsItems.csv")
+var text = readTextFile("mineardsItems.json")
 
 // const reader = new FileReader();
 
@@ -47,5 +47,5 @@ var text = readTextFile("mineardsItems.csv")
 
 // var text = reader.readAsText("mineardsItems.csv");
 
-var data = csvToArray(text);
-console.log(data);
+// var data = csvToArray(text);
+console.log(text);
