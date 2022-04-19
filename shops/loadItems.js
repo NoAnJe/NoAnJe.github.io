@@ -17,27 +17,33 @@ function readTextFile(file)
     rawFile.send(null);
 }
 
-function csvToArray(str, delimiter = ",") {
+// function csvToArray(str, delimiter = ",") {
 
-    const headers = str.slice(0, str.indexOf("\n")).split(delimiter);
+//     const headers = str.slice(0, str.indexOf("\n")).split(delimiter);
 
-    const rows = str.slice(str.indexOf("\n") + 1).split("\n");
+//     const rows = str.slice(str.indexOf("\n") + 1).split("\n");
 
-    const arr = rows.map(function (row) {
-      const values = row.split(delimiter);
-      const el = headers.reduce(function (object, header, index) {
-        object[header] = values[index];
-        return object;
-      }, {});
-      return el;
-    });
+//     const arr = rows.map(function (row) {
+//       const values = row.split(delimiter);
+//       const el = headers.reduce(function (object, header, index) {
+//         object[header] = values[index];
+//         return object;
+//       }, {});
+//       return el;
+//     });
   
-    // return the array
-    return arr;
+//     // return the array
+//     return arr;
+// }
+
+function addElement(value, index, array) {
+    saleItem = JSON.parse(value);
+    console.log("Item" + saleItem.Item)
 }
 
-var text = readTextFile("mineardsItems.json")
-
+const text = readTextFile("mineardsItems.json")
+const shopData = JSON.parse(text)
+shopData.array.forEach(addElement);
 // const reader = new FileReader();
 
 // reader.onload = function (e) {
@@ -48,4 +54,6 @@ var text = readTextFile("mineardsItems.json")
 // var text = reader.readAsText("mineardsItems.csv");
 
 // var data = csvToArray(text);
-console.log(text);
+// console.log(shopData[1].Item);
+
+// After successfully reading the file, the next step is to set each value
