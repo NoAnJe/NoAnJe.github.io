@@ -19,8 +19,8 @@ function readTextFile(file)
 }
 
 function addElement(value, index, array) {
-    var saleItem = JSON.parse(value);
-    console.log("Item" + saleItem.Item)
+    // var saleItem = JSON.parse(value);
+    console.log("Item" + value.Item)
 }
 
 const res = readTextFile("mineardsItems.json");
