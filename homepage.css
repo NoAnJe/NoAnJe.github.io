@@ -91,10 +91,14 @@ label {
     float: left;
 }
 
+form {
+    display: inline-block;
+}
+
 div {
     clear: both;
 }
-
+/* 
 .formdiv {
     min-width: 60%;
-}
+} */
