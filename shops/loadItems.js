@@ -20,7 +20,21 @@ function readTextFile(file)
 
 function addElement(value, index, array) {
     // var saleItem = JSON.parse(value);
-    console.log("Item" + value.Item)
+    // console.log("Item" + value["Price (Iron)"])
+    // value.Item value.Quantity value.Price
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    input.setAttribute("id", value.Item)
+    label.setAttribute("id", "lbl"+value.Item)
+    label.setAttribute("for", value.Item)
+    input.setAttribute("min", "0");
+    input.setAttribute("step", "1");
+    input.setAttribute("max", "256");
+    input.setAttribute("value", "0");
+    document.getElementById("buyForm").appendChild(input);
+    document.getElementById("buyForm").appendChild(label);
+    var labelText = value.Item + " at " + value["Price (Iron)"] + " iron per " + value.Quantity;
+    document.getElementById("lbl"+value.Item).innerHTML = labelText;
 }
 
 const res = readTextFile("mineardsItems.json");
