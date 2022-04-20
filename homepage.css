@@ -98,7 +98,8 @@ form {
 div {
     clear: both;
 }
-/* 
-.formdiv {
-    min-width: 60%;
-} */
+
+.form-center {
+    display: flex;
+    justify-content: center;
+}
