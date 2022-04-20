@@ -94,3 +94,7 @@ label {
 div {
     clear: both;
 }
+
+.formdiv {
+    min-width: 60%;
+}
