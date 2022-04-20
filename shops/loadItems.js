@@ -19,7 +19,7 @@ function readTextFile(file)
 }
 
 function addElement(value, index, array) {
-    saleItem = JSON.parse(value);
+    var saleItem = JSON.parse(value);
     console.log("Item" + saleItem.Item)
 }
 
