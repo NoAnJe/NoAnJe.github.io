@@ -27,7 +27,7 @@ function addElement(value, index, array) {
     divID = "div" + counter;
     div.setAttribute("id", divID);
     if ((counter % 2) === 0) {
-        div.style.opacity = "40%";
+        div.style.backgroundColor = "grey";
     }
     document.getElementById("buyForm").appendChild(div);
 
