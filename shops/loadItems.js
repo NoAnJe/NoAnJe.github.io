@@ -28,10 +28,11 @@ function addElement(value, index, array) {
     div.setAttribute("id", divID);
     if ((counter % 2) === 0) {
         // div.style.filter = "brightness(85%)";
-        div.style.borderStyle = "solid";
-        div.style.borderColor = "black";
+        // div.style.borderStyle = "solid";
+        // div.style.borderColor = "black";
         // div.style.borderRadius = "0.2em";
         div.style.backgroundColor = "rgb(171, 171, 171)";
+        div.style.height = "auto";
     }
     document.getElementById("buyForm").appendChild(div);
 
