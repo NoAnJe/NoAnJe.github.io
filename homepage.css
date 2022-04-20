@@ -79,3 +79,11 @@ img {
 .imgbtn:hover {
     opacity: 100%;
 }
+
+input {
+    padding: 0.2em;
+}
+
+label {
+    padding: 0.2em;
+}
