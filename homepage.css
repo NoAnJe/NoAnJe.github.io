@@ -81,9 +81,11 @@ img {
 }
 
 input {
-    padding: 0.2em;
+    margin: 0.2em;
+    float: right;
 }
 
 label {
-    padding: 0.2em;
+    margin: 0.2em;
+    float: left;
 }
