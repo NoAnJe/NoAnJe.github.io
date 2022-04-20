@@ -18,25 +18,6 @@ function readTextFile(file)
     rawFile.send(null);
 }
 
-// function csvToArray(str, delimiter = ",") {
-
-//     const headers = str.slice(0, str.indexOf("\n")).split(delimiter);
-
-//     const rows = str.slice(str.indexOf("\n") + 1).split("\n");
-
-//     const arr = rows.map(function (row) {
-//       const values = row.split(delimiter);
-//       const el = headers.reduce(function (object, header, index) {
-//         object[header] = values[index];
-//         return object;
-//       }, {});
-//       return el;
-//     });
-  
-//     // return the array
-//     return arr;
-// }
-
 function addElement(value, index, array) {
     saleItem = JSON.parse(value);
     console.log("Item" + saleItem.Item)
@@ -45,7 +26,7 @@ function addElement(value, index, array) {
 const res = readTextFile("mineardsItems.json");
 var shopData = JSON.parse(allText);
 console.log(shopData)
-shopData.array.forEach(addElement);
+shopData.forEach(addElement);
 // const reader = new FileReader();
 
 // reader.onload = function (e) {
