@@ -73,5 +73,15 @@
     "Item": "Soul Torches",
     "Quantity": 64,
     "Price (Iron)": 4
+  },
+  {
+    "Item": "Spruce Doors",
+    "Quantity": 3,
+    "Price (Iron)": 2
+  },
+  {
+    "Item": "Warped Doors",
+    "Quantity": 3,
+    "Price (Iron)": 6
   }
 ]
