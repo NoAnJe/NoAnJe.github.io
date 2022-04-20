@@ -22,13 +22,8 @@ function readTextFile(file)
 
 // This function adds the label and form box for each individual item
 function addElement(value, index, array) {
-    // var div = document.createElement("div");
-    // div.setAttribute("id", "div"+counter);
-    // document.getElementById("buyForm").appendChild(div);
-
     var input = document.createElement("input");
     var label = document.createElement("label");
-    // linebreak = document.createElement("br");
     
     input.setAttribute("id", value.Item);
     label.setAttribute("id", "lbl"+value.Item);
@@ -42,12 +37,8 @@ function addElement(value, index, array) {
     document.getElementById("buyForm").appendChild(label);
     document.getElementById("buyForm").appendChild(input);
     
-    // document.getElementById("buyForm").appendChild(linebreak);
-    
     var labelText = value.Item + " at " + value["Price (Iron)"] + " iron per " + value.Quantity;
     document.getElementById("lbl"+value.Item).innerHTML = labelText;
-
-    // ++counter;
 }
 
 // Add the individual items to the shop
@@ -61,9 +52,13 @@ linebreak = document.createElement("br");
 document.getElementById("buyForm").appendChild(linebreak);
 
 // Add the submit/reset buttons
+var div = document.createElement("div");
+div.setAttribute("id", "divSubmit");
+document.getElementById("buyForm").appendChild(div);
+
 var submit = document.createElement("input");
 submit.setAttribute("type", "submit");
 var reset = document.createElement("input");
 reset.setAttribute("type", "reset");
-document.getElementById("buyForm").appendChild(submit);
-document.getElementById("buyForm").appendChild(reset);
+document.getElementById("divSubmit").appendChild(submit);
+document.getElementById("divSubmit").appendChild(reset);
