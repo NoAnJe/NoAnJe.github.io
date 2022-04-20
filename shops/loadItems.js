@@ -22,6 +22,15 @@ function readTextFile(file)
 
 // This function adds the label and form box for each individual item
 function addElement(value, index, array) {
+
+    var div = document.createElement("div");
+    divID = "div" + counter;
+    div.setAttribute("id", divID);
+    if ((counter % 2) === 0) {
+        div.style.backgroundBlendMode = "darken";
+    }
+    document.getElementById("buyForm").appendChild(div);
+
     var input = document.createElement("input");
     var label = document.createElement("label");
     
@@ -34,11 +43,13 @@ function addElement(value, index, array) {
     input.setAttribute("value", "0");
     input.setAttribute("type", "number");
 
-    document.getElementById("buyForm").appendChild(label);
-    document.getElementById("buyForm").appendChild(input);
+    document.getElementById(divID).appendChild(label);
+    document.getElementById(divID).appendChild(input);
     
     var labelText = value.Item + " at " + value["Price (Iron)"] + " iron per " + value.Quantity;
     document.getElementById("lbl"+value.Item).innerHTML = labelText;
+
+    ++counter;
 }
 
 // Add the individual items to the shop

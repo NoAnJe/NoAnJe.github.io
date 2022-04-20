@@ -87,7 +87,7 @@ input {
 
 label {
     margin: 0.2em;
-    clear: both;
+    /* clear: both; */
     float: left;
 }
 
