@@ -24,9 +24,9 @@ function addElement(value, index, array) {
     // value.Item value.Quantity value.Price
     var input = document.createElement("input");
     var label = document.createElement("label");
-    input.setAttribute("id", value.Item)
-    label.setAttribute("id", "lbl"+value.Item)
-    label.setAttribute("for", value.Item)
+    input.setAttribute("id", value.Item);
+    label.setAttribute("id", "lbl"+value.Item);
+    label.setAttribute("for", value.Item);
     input.setAttribute("min", "0");
     input.setAttribute("step", "1");
     input.setAttribute("max", "256");
