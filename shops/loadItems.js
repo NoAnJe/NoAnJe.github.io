@@ -42,8 +42,9 @@ function addElement(value, index, array) {
     console.log("Item" + saleItem.Item)
 }
 
-const res = readTextFile("mineardsItems.json")
-var shopData = JSON.parse(allText)
+const res = readTextFile("mineardsItems.json");
+var shopData = JSON.parse(allText);
+console.log(shopData)
 shopData.array.forEach(addElement);
 // const reader = new FileReader();
 
